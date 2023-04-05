@@ -1,0 +1,19 @@
+a=int(input("Enter the value:"))
+b=int(input("Enter the number of years:"))
+c=int(input("gender = 1male or 2female:"))
+d=input("Is customer senior citizen(y/n):")
+
+if(c==1):
+    if(d=='y'):
+        S=(a*b*12)/100;
+        print(S)
+    else:
+        S=(a*b*10)/100;
+        print(S)
+if(c==2):
+    if(d=='y'):
+        S=(a*b*15)/100;
+        print(S)
+    else:
+        S=(a*b*10)/100;
+        print(S)
