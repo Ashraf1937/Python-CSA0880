@@ -1,0 +1,22 @@
+word = input("Enter the word: ")
+vowels = []
+consonants = []
+
+for letter in word:
+    if letter.lower() in "aeiou":
+        vowels.append(letter.upper())
+    elif letter.isalpha():
+        consonants.append(letter.upper())
+
+vowels.sort()
+consonants.sort()
+
+print("Vowels in alphabetical order: " + ", ".join(vowels))
+print("Consonants in alphabetical order: " + ", ".join(consonants))
+
+if len(vowels) > len(consonants):
+    print("Maximum Count: Vowels")
+elif len(vowels) < len(consonants):
+    print("Maximum Count: Consonants")
+else:
+    print("Equal")
