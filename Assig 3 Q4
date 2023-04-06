@@ -1,0 +1,8 @@
+def delchar(s, c):
+    if len(c) != 1:
+        return s
+    return s.replace(c, '')
+s = "Hello world "
+c = "l"
+result = delchar(s, c)
+print(" The string after the character is removed:",result)
