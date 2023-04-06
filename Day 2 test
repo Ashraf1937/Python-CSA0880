@@ -1,0 +1,14 @@
+a=int(input("Enter the value a"))
+b=int(input("Enter the value b"))
+c=int(input("Enter the value c"))
+def days_to_reach_zero_cases(a, b, c):
+    if b >= a:
+        return 1 
+    else:
+        days = 0
+        while c > 0:
+            c -= a
+            c += b
+            days += 1
+        return days
+print(days_to_reach_zero_cases(a,b,c))
