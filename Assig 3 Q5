@@ -1,0 +1,23 @@
+def alternate_merge(s1, s2):
+    result = ""
+    for i in range(min(len(s1), len(s2))):
+        result += s1[i] + s2[i]
+    if len(s1) > len(s2):
+        result += s1[len(s2):]
+    elif len(s2) > len(s1):
+        result += s2[len(s1):]
+    return result
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+s1 = "welcome"
+s2 = "Homely"
+result = alternate_merge(s1, s2)
+s3 = (s1+s2)
+vowel_count = count_vowels(s3)
+print(result) 
+print(vowel_count)
