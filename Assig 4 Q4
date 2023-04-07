@@ -1,0 +1,14 @@
+num = int(input("Enter a number:"))
+
+num_str = str(num)
+
+msb_index = next((i for i, digit in enumerate(num_str) if digit != "0"), len(num_str))
+
+lsb = num_str[-1]
+
+msb = num_str[msb_index]
+
+print("LSB:", lsb)
+
+print("MSB:", msb)
+
