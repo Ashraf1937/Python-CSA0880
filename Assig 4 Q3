@@ -1,0 +1,14 @@
+n = int(input("Enter the number of elements in the list: "))
+
+lst = []
+
+for i in range(n):
+
+    elem = int(input("Enter element{}: ".format(i+1)))
+
+    lst.append(elem)
+
+unique_items = list(set(lst))
+
+print("Non-duplicate items:", unique_items)
+
